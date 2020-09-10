@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta property="og:image" content="https://csciclub.github.io/CSCIClub%20Logo.png" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <!-- Icon -->
+  <link rel="icon" type="image/png" href="images/CSCI OLD logo Small PNG.png">
+  
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Permanent+Marker|Sigmar+One&display=swap"
+    rel="stylesheet">
+
+  <!-- font icon -->
+  <script src="https://kit.fontawesome.com/cc319795d9.js" crossorigin="anonymous"></script>
+
+  <!-- style css -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+
+  <!-- animation css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("October 23, 2020 12:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById("demo1").innerHTML = " " + days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo1").innerHTML = "The application period is closed.";
+      }
+    }, 1000);
+  </script>
+
+  <title>HuskiesHack</title>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="images/CSCIClub Logo.png" style="width: 50px;" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#info">Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="#contact">Contact</a>
+        </li>
+
+
+      </ul>
+      <li class="float-sm-right"><a
+          href="https://discordapp.com/invite/4qFheR?fbclid=IwAR2km5BLqm4PLP9L9Ga-M5jGeLVSuo7CR3-UrXpWhRcHY23yegB9T1dyXww"
+          target="_blank"><img src="images/discord.png" style="width:60px; height:30px; object-fit:contain;   " alt=""></a>
+      </li>
+
+
+    </div>
+  </nav>
+
+  <!-- corona update msg -->
+  <div class="coronaUpdate">
+    <h2 class="text-black ">APPLICATION OPEN!</h2>
+  </div>
+
+  <!-- huskyhack heading using flexbox-->
+  <div class="d-flex text-center flex-column justify-content-between flex-container">
+
+
+    <div class="flex-item1" style="color: #ce1f44;font-family: 'Sigmar One', cursive;
+      font-family: 'Dancing Script', cursive;
+      font-family: 'Permanent Marker', cursive;">
+      <h3 class="main-hd mt-5 ">HUSKIES HACK 2020</h3>
+
+    </div>
+
+
+    <div class="flex-item2 justify-content-between">
+
+      <div id="LeadingText" class="text-white lead moto-text">Dream. Design. Code.</div>
+
+      <button class="btn btn-lg mt-3 mb-5 RegisterBtn animated bounceInLeft delay-0.5s"><a
+          href="
+        https://forms.office.com/Pages/ResponsePage.aspx?id=xscRULQKq0ae9PrnSpIaf3gyv7IOWuRNrke59imawCFURFo1NFFBVDIyQTRDSVhFMEI3MzhZQjRaOS4u" target="_blank">Register
+          Today!</a></button>
+
+
+      <!-- Deadline not decieded so commented out -->
+      <p class="deadline-date ">- Application Deadline: OCTOBER 23rd @ Noon.</p>
+
+    </div>
+
+  </div>
+
+  <!-- testing event section with grid -->
+  <section id="info">
+    <div class="container-fluid event-container">
+      <div class="row">
+
+        <div class="col-sm-12  ">
+          <h2 class="display-4 event-info-hd text-white  d-flex justify-content-center mt-3 " style="display: block;">[
+            Event Info ]
+          </h2>
+
+          <!-- date set to hidden until further notice -->
+          <div class="even-details" style="visibility: hidden;">
+            <p class="date text-info d-flex justify-content-center mb-3">October <span style="color:#ce1f44;">23rd - October 25th</span>
+              <span style="color:white;">-</span>
+              <span style="color:#ce1f44;">22</span></p>
+          </div>
+          <!-- date set to hidden until further notice End -->
+
+          <p class="Location text-white d-flex justify-content-center mb-5" style="font-family:cursive;">VIRTUAL @ ZOOM</p>
+        </div>
+
+        <div class="col-sm-12 Info ">
+          <p class=" lead text-white d-flex justify-content-center mb-3 ">
+            Huskies Hack is a 24 Hours non-stop hackathon held at St.Cloud State University.<br>
+            Students will work on teams of 4 to develop web, mobile, desktop applications <br>
+            to solve a real-world challenging problem provided by our sponsors.
+          </p>
+        </div>
+
+        <div class="col-sm-12  ">
+          <p class="text-danger mb-5 text-monospace font-weight-bold d-flex justify-content-center info-bottom-section">
+            Free T-shirts.
+            Prizes.
+            Networking.</p>
+        </div>
+        <div class="col-sm-12 ">
+          <div class="more-details " style="font-size:12px; font-weight:300;">
+            <h2> <a class="mb-2" onclick="/*popup1toggle('2');*/" href="Datasets.pdf" target="_blank"
+                style="cursor: pointer; text-decoration: underline; color:#fefefe">Project
+                Ideas and Data Resources - <a href="https://hack.uiowa.edu/"
+                  style="cursor: pointer; text-decoration: underline; color:yellow;" target=" _blank">HackUIowa</a>)</a>
+            </h2>
+            <br>
+            <h2><a onclick="/*popup1toggle('2');*/" class="mb-2  " href="Event Day Structure.pdf" target="_blank"
+                style="cursor: pointer; text-decoration: underline; color:#fefefe">HuskiesHack Schedule</a>
+            </h2>
+
+            <br>
+            <h2><a onclick="/*popup1toggle('2');*/" class=" " href="Judging_Scorecard.pdf" target="_blank"
+                style="cursor: pointer; text-decoration: underline; color:#fefefe">Judging Score Sheet </a>
+            </h2>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- testing event section with grid  ENDDDDD-->
+
+
+
+  <div class=" container-fluid" style="background-color: #fefefe;">
+    <h4 class=" display-4 text-center mb-4 pt-4 sponsor-hd">[ Sponsors ]</h4>
+
+    <div class="SponsorRow row my-auto ">
+      <div class="SponsorHolder col-sm-6 d-flex align-items-center animated bounceIn delay-0.5s"><img
+          src="images/GeoComm_Logo.png" class="sponsor-img img-fluid" alt="GeoComm">
+      </div>
+      <div class="SponsorHolder col-sm-6 d-flex align-items-center animated bounceIn delay-0.5s"><img src="images/rbc.png"
+          class="sponsor-img img-fluid" alt="GeoComm">
+      </div>
+      <!-- <div class="col-sm-4 "><img src="capitaOne.png" class="sponsor-img" alt=""> </div> -->
+    </div>
+  </div>
+
+
+
+  <!-- Section FAQ -->
+  <section id="faq" class="mb-5">
+
+    <div class="container faq-container mt-5">
+      <h4 class="text-center display-4" id="faq-hd">[ FAQs ]</h4>
+      <div id="accordion ">
+
+        <div class="card text-black" style="background-color:yellow;">
+          <div id=" headingOne">
+            <h5 class="mb-0">
+              <button id="faqbutton" class="btn first-faq-btn text-left text-black" data-toggle="collapse"
+                data-target="#Ques1" aria-expanded="true" aria-controls="Ques1">
+                <p class="mb-0"> CORONAVIRUS/COVID-19 UPDATE? <i class="fas fa-chevron-down"></i></p>
+
+              </button>
+            </h5>
+          </div>
+
+          <div id="Ques1" class="collapse " aria-labelledby="headingOne" data-parent="#accordion" ">
+            <div class=" card-body">
+            For everyone safety, Hackathon is being hosted virtual through Zoom. Please register yourself <a href=
+                                   "https://forms.office.com/Pages/ResponsePage.aspx?id=xscRULQKq0ae9PrnSpIaf3gyv7IOWuRNrke59imawCFURFo1NFFBVDIyQTRDSVhFMEI3MzhZQjRaOS4u" target="_blank">here</a>.
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    <!-- 1-1.a faq -->
+    <div class="container faq-container">
+      <div id="accordion">
+        <div class="card text-white">
+          <div id="headingOne">
+            <h5 class="mb-0">
+              <button id="faqbutton" class="btn first-faq-btn text-left text-white" data-toggle="collapse"
+                data-target="#Ques2" aria-expanded="true" aria-controls="Ques2">
+                <p class="mb-0"> What is Hackathon? <i class="fas fa-chevron-down"></i></p>
+
+              </button>
+            </h5>
+          </div>
+
+          <div id="Ques2" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              A hackathon is an invention marathon. A hackathon is an 24 hour event,
+              where various individuals come together as a group to create new, innovative software and hardware
+              solutions
+              collaboratively. The goal is for each group to have some functional software at the end of the
+              event. The
+              best performances, both overall for their innovative idea and in specific categories, are awarded
+              prizes
+              by
+              a small panel of judges.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- second faq -->
+    <div class="container faq-container">
+      <div id="accordion">
+        <div class="card text-white">
+          <div id="headingOne">
+            <h5 class="mb-0">
+              <button id="faqbutton" class="btn first-faq-btn text-left text-white" data-toggle="collapse"
+                data-target="#Ques2.1" aria-expanded="true" aria-controls="Ques2.1">
+                <p class="mb-0"> What to bring? <i class="fas fa-chevron-down"></i></p>
+
+              </button>
+            </h5>
+          </div>
+
+          <div id="Ques2.1" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <ul class="list-group text-indent mt-1" style="list-style: none;">
+                <li class="">- Laptop and charger</li>
+                <li class="">- Pillow</li>
+                <li class="">- Cellphone and charger</li>
+                <li class="">- Toiletries (Toothbrush, toothpaste, deodorant, etc.</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- third faq -->
+    <div class="container faq-container">
+      <div id="accordion">
+        <div class="card text-white">
+          <div id="headingOne">
+            <h5 class="mb-0">
+              <button id="faqbutton" class="btn first-faq-btn text-left text-white" data-toggle="collapse"
+                data-target="#Ques2-a" aria-expanded="true" aria-controls="Ques2">
+                <p class="mb-0"> How many people can be in a group?<i class="fas fa-chevron-down"></i></p>
+
+              </button>
+            </h5>
+          </div>
+
+          <div id="Ques2-a" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Maximum number of 4 pepole in a team. You can also participate solo if you prefer.
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 14th faq -->
+    <div class="container faq-container">
+      <div id="accordion">
+        <div class="card text-white">
+          <div id="headingOne">
+            <h5 class="mb-0">
+              <button id="faqbutton" class="btn first-faq-btn text-left text-white" data-toggle="collapse"
+                data-target="#Ques14" aria-expanded="true" aria-controls="Ques2">
+                <p class="mb-0"> Does every member of team need to register?<i class="fas fa-chevron-down"></i>
+                </p>
+
+              </button>
+            </h5>
+          </div>
+
+          <div id="Ques14" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Yes, every individual needs to register for the event even if they have their own team.
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fourth faq -->
+
+    <div class="container faq-container">
+      <div id="accordion">
+        <div class="card text-white">
+          <div id="headingOne">
+            <h5 class="mb-0">
+              <button id="faqbutton" class="btn first-faq-btn text-left text-white" data-toggle="collapse"
+                data-target="#Ques3" aria-expanded="true" aria-controls="Ques3">
+                <p class="mb-0">Is Hackathon the same as Hacking?<i class="fas fa-chevron-down"></i></p>
+
+              </button>
+            </h5>
+          </div>
+
+          <div id="Ques3" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              No, the hackathon should not be confused with illegal and unauthorized programming.
+              Although the term “hacking” has previously been associated with gaining access to a computer
+              system with
+              malicious intent,
+              “hacking” has started to transition into a positive term describing the actions of innovators who
+              are
+              creating prototypes
+              of their ideas. Programmers have rallied around the term “hacking”, as a term to describe their
+              love of
+              learning and their
+              efforts to build the future.
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- fifth faq -->
+    <div class="container faq-container">
+      <div id="accordion">
+        <div class="card text-white">
+          <div id="headingOne">
+            <h5 class="mb-0">
+              <button id="faqbutton" class="btn first-faq-btn text-left text-white" data-toggle="collapse"
+                data-target="#Ques4" aria-expanded="true" aria-controls="Ques3">
+                <p class="mb-0">Why should you participate?<i class="fas fa-chevron-down"></i></p>
+
+              </button>
+            </h5>
+          </div>
+
+          <div id="Ques4" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              According to the Major League Hacking survey, 80% of students explored new technologies or
+              services
+              during their hackathon project experience, 93 percent learned something new that hadn't been
+              covered
+              in coursework, 69% percent gained new skills that they were able to use in classwork later on and
+              89%
+              learned something new from fellow students during the event.
+
+
+              <ul class="list-group text-indent mt-1" style="list-style: none;">
+                <li class="">- Unleash Your Creativity & Potential</li>
+                <li class="">- Add value to Your Resume or CV to open up new doors in the future.</li>
+                <li class="">- Work in a team to Enhance Your Soft Skills: Team Work, Collaboration &
+                  Communication.
+                </li>
+                <li class="">- Improve your real-world software development skills.</li>
+                <li class="">- Applying what you learn in the Classroom & explore new Technology and Tools.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- sixth faq -->
+    <div class="container faq-container">
+      <div id="accordion">
+        <div class="card text-white">
+          <div id="headingOne">
+            <h5 class="mb-0">
+              <button id="faqbutton" class="btn first-faq-btn text-left text-white" data-toggle="collapse"
+                data-target="#Ques5" aria-expanded="true" aria-controls="Ques5">
+                <p class="mb-0">What if you are new to programming?<i class="fas fa-chevron-down"></i>
+                </p>
+
+              </button>
+            </h5>
+          </div>
+
+          <div id="Ques5" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Hackathons are not limited to computer science majors — anyone who has an interest in technology
+              and is eager to learn can participate in a hackathon. It's a great place to begin your coding
+              journey.At
+              Hackathon we believe that anyone can hack.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- seventh faq -->
+    <div class="container faq-container">
+      <div id="accordion">
+        <div class="card text-white">
+          <div id="headingOne">
+            <h5 class="mb-0">
+              <button id="faqbutton" class="btn first-faq-btn text-left text-white" data-toggle="collapse"
+                data-target="#Ques6" aria-expanded="true" aria-controls="Ques6">
+                <p class="mb-0">Who is organizing HuskiesHack Hackathon?<i class="fas fa-chevron-down"></i></p>
+
+              </button>
+            </h5>
+          </div>
+
+          <div id="Ques6" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Computer Science Club is exclusively organizing the event with great support from the
+              Department of College of Science & Engineering and the support from the organizers of
+              HuskiesInvent - Dr. Mark Petzold & Mr. Stephen Janasie. The main mission is to provide
+              better opportunities for students to improve their technical and soft skills to lead a
+              successful career.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8th faq -->
+    <div class="container faq-container">
+      <div id="accordion">
+        <div class="card text-white">
+          <div id="headingOne">
+            <h5 class="mb-0">
+              <button id="faqbutton" class="btn first-faq-btn text-left text-white" data-toggle="collapse"
+                data-target="#Ques8" aria-expanded="true" aria-controls="Ques2">
+                <p class="mb-0"> Is it free to attend the competition?<i class="fas fa-chevron-down"></i></p>
+
+              </button>
+            </h5>
+          </div>
+
+          <div id="Ques8" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Yes! it's completely free. We will also provided free meal for participants.
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- 11th faq -->
+    <div class="container faq-container">
+      <div id="accordion">
+        <div class="card text-white">
+          <div id="headingOne">
+            <h5 class="mb-0">
+              <button id="faqbutton" class="btn first-faq-btn text-left text-white" data-toggle="collapse"
+                data-target="#Ques11" aria-expanded="true" aria-controls="Ques2">
+                <p class="mb-0"> When will the registration close?<i class="fas fa-chevron-down"></i></p>
+
+              </button>
+            </h5>
+          </div>
+
+          <div id="Ques11" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              The registration is still open even though Hackathon has been postponed to next semester. Any further
+              updates on event info will be notified by email.
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12th faq -->
+    <div class="container faq-container">
+      <div id="accordion">
+        <div class="card text-white">
+          <div id="headingOne">
+            <h5 class="mb-0">
+              <button id="faqbutton" class="btn first-faq-btn text-left text-white" data-toggle="collapse"
+                data-target="#Ques12" aria-expanded="true" aria-controls="Ques2">
+                <p class="mb-0"> What if you don't have a Team?<i class="fas fa-chevron-down"></i></p>
+
+              </button>
+            </h5>
+          </div>
+
+          <div id="Ques12" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Not to worry! You can hack solo.
+              A lot of people go to hackathons without teams.
+              There will be a session at the beginning of the hackathon for you to meet others and form teams.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13th faq -->
+    <div class="container faq-container">
+      <div id="accordion">
+        <div class="card text-white">
+          <div id="headingOne">
+            <h5 class="mb-0">
+              <button id="faqbutton" class="btn first-faq-btn text-left text-white" data-toggle="collapse"
+                data-target="#Ques13" aria-expanded="true" aria-controls="Ques2">
+                <p class="mb-0"> Prize and Recognization for teams?<i class="fas fa-chevron-down"></i></p>
+
+              </button>
+            </h5>
+          </div>
+
+          <div id="Ques13" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body" id="prizes">
+              <ul class="ist-group text-indent mt-1" style="list-style:none; ">
+
+                <li><i class="fas fa-trophy "> First Place: $200 amazon gift cards</i></li>
+                <li><i class="fas fa-medal "> Second Place: $120 amazon gift cards</i></li>
+                <li><i class="fas fa-award "> Third Place: $80 amazon gift cards</i></li>
+
+              </ul>
+              <p class="">Not only that, Winning team will also be featured in ISELF Building of SCSU.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- 14th faq -->
+    <div id="moreQues-contact" class="text-white mt-5">
+      <p>For more question, please send us email at:<a
+          href="mailto:csciclub@stcloudstate.edu?Subject=Hello%20CSCI CLub!" target="_top">
+          csciclub@stcloudstate.edu </a></p>
+      <p>We abide by the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank"
+          class="link-2">MLH&nbsp;Code of Conduct.</a></p>
+    </div>
+
+
+    <!-- FAQ end -->
+    </div>
+  </section>
+  <!-- FAQ Section End-->
+
+  <section id="contact">
+    <!-- footer seciton -->
+    <div class="container-fluid footer  text-dark text-center mt-5 pt-5">
+
+
+      <div class="footer-item">
+        <a href="https://www.facebook.com/SCSU-Computer-Science-Club-2373486986243849/" target="_blank"><i
+            class="item1 fab fa-facebook-square" style="color: #3b5998;"></i></a>
+        <a href="https://www.instagram.com/csciclub/" target="_blank"><i style="color:rgb(225,48,108);"
+            class="item2 fab fa-instagram ml-3"></i></a>
+        <a href="mailto:csciclub@stcloudstate.edu?Subject=Hello%20CSCI CLub!" target="_top"><i
+            class="item3 fas fa-envelope ml-3" style="color: rgb(37, 160, 241);"></i></a>
+      </div>
+
+      <p class="lead mt-2 p-1 mb-0 text-dark">Organized By: <br> <a
+          href="https://huskiesconnect.stcloudstate.edu/organization/association-for-computing-machinery"
+          style="text-decoration: none; color:#182333;">Computer
+          Science Club SCSU</a>
+        <p class="email font-italic mt-0" style="font-size:13px;">csciclub@stcloudstate.edu</p>
+      </p>
+
+      <!-- join csci club btn -->
+      <button class="btn btn-sm mt-3 mb-2 RegisterBtn animated bounceInLeft delay-0.5s">
+        <a href="https://huskiesconnect.stcloudstate.edu/organization/association-for-computing-machinery"
+          target="_blank">Join CSCI Club!</a>
+
+      </button>
+      <!-- join csci club btn  END-->
+
+      <p class="designer-name mt-3" style="font-size: 14px;">Made with :heart: by Shisab Singh ©</p>
+    </div>
+  </section>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

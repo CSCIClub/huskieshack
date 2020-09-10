@@ -1,0 +1,379 @@
+* {
+  font-family: Trebuchet MS, Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* cover */
+
+.background-image {
+  width: 100%;
+}
+
+body {
+  background-color: #0f1620 !important;
+}
+.bg-dark {
+  background-color: #0f1620 !important;
+}
+
+/* ************* HuskyHack Heading Cover ************ */
+.flex-container {
+  background: url("images/connect-logo.png");
+  width: 100%;
+  height: 93vh;
+  background-position: center 35%; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 75%;
+}
+.main-hd {
+  font-size: 60px;
+  font-family: "Russo One", sans-serif;
+  text-shadow: 0 0 5px #ad4139;
+}
+
+#LeadingText {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.text-white {
+  color: #f1f4ff !important;
+}
+
+/* *****Register Button */
+
+.RegisterBtn {
+  text-decoration: none;
+  margin-top: 3rem;
+  background: transparent;
+  border: 2px solid #ce1f44;
+  transition: background 0.3s ease-in-out;
+}
+.RegisterBtn a {
+  text-decoration: none;
+  color: #ce1f44;
+  transition: color 0.3s ease-in-out;
+}
+
+.RegisterBtn:hover {
+  text-decoration: none;
+  margin-top: 3rem;
+  background: #ce1f44;
+}
+
+.RegisterBtn:hover a {
+  color: white;
+}
+/* *****Register Button */
+
+/* coronavirus update msg */
+.coronaUpdate {
+  margin: 0 auto;
+  background-color: yellow;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-align: center;
+  padding-top: 60px;
+}
+#demo1 {
+  color: black !important;
+
+  font-size: 1.1em;
+}
+
+/* Application Deadine */
+.deadline-date {
+  font-family: Helvetica Neue;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #848484;
+}
+
+/* ********Event Info Section******** */
+.event-container {
+  font-size: 20px;
+  background-color: #13366dbf;
+  height: 100vh;
+  text-align: center;
+}
+
+.date {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "FuturaTEE", sans-serif;
+}
+.Location {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.Info {
+  font-size: 20px;
+  padding-left: 1em;
+  margin: 0 auto;
+  /* border-left: 5px solid white !important; */
+  line-height: 1.7;
+}
+
+/*********** Sponsor Section **************/
+
+.sponsor-img {
+  max-width: 100%;
+  margin: 0 auto; /* this makes the items center */
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.info-bottom-section {
+  font-size: 30px;
+  font-weight: 900 !important;
+}
+/* ********FAQ Section ********** */
+.card {
+  border-color: #fefefe;
+  background-color: transparent;
+}
+
+#faqbutton {
+  background-color: transparent;
+}
+
+#faq-hd {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 4%;
+}
+.first-faq-btn {
+  width: 100%;
+}
+
+.fa-chevron-down {
+  float: right;
+}
+
+.faq-container {
+  margin-bottom: 10px;
+}
+
+#moreQues-contact {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*********** Footer Section ************  */
+
+.footer {
+  background-color: #fefefe;
+}
+.footer-item .item1,
+.item2,
+.item3 {
+  font-size: 30px;
+}
+
+/* ***************** Media Screen **************** */
+
+@media screen and (max-width: 738px) {
+  .more-details h2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .lead {
+    font-size: 1em;
+  }
+
+  .more-details {
+    font-size: 15px;
+  }
+  .info-bottom-section {
+    font-size: 20px;
+    font-weight: 900 !important;
+  }
+}
+@media screen and (max-width: 625px) {
+  .main-hd {
+    font-size: 40px;
+  }
+
+  #LeadingText {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* *** HuskyHack Cover ****** */
+  .main-hd {
+    font-size: 31px;
+  }
+
+  .moto-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .event-info-hd {
+    font-size: 30px;
+  }
+
+  #RegisterBtn {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .flex-container {
+    background: url("images/connect-logo.png");
+    width: 100%;
+    height: 75vh;
+    background-position: center 40%; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain;
+  }
+
+  #LeadingText {
+    font-size: 1.8rem;
+  }
+
+  .Location {
+    font-size: 20px;
+  }
+
+  .event-summary {
+    font-size: 14px;
+    padding: 4px;
+  }
+  .date {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "FuturaTEE", sans-serif;
+  }
+
+  #faq-hd {
+    margin-bottom: 8%;
+  }
+
+  /* *****8* FAQ Section ********** */
+  .btn,
+  #Ques1,
+  #Ques2,
+  #Ques3,
+  #Ques4,
+  #Ques5,
+  #Ques6 {
+    font-size: 0.8rem !important;
+  }
+  .card-header {
+    padding: 3px;
+  }
+  .sponsor-hd {
+    font-size: 2rem;
+  }
+  .sponsor-img {
+    height: 100px !important;
+    width: 200px;
+    overflow: hidden;
+    object-fit: contain;
+  }
+}
+
+/* iphone x screen size */
+@media screen and (max-width: 375px) {
+  .event-container {
+    height: 100vh;
+  }
+  .date {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "FuturaTEE", sans-serif;
+  }
+  .display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  #prizes {
+    font-size: 0.8rem;
+  }
+}
+/* iphone x screen size ENd */
+
+@media screen and (max-width: 360px) {
+  .event-container {
+    height: 100vh;
+  }
+  .flex-container {
+    height: 85vh;
+  }
+  .more-details h2 {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .display-4 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  #moreQues-contact p {
+    font-size: 0.7rem !important;
+  }
+  #prizes {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  /* HuskyHack Cover  */
+
+  .moto-text {
+    margin-top: -9rem;
+    font-size: 1.2rem;
+  }
+
+  #LeadingText {
+    font-size: 1.5rem;
+  }
+
+  .main-hd {
+    font-size: 32px;
+  }
+
+  .Location {
+    font-size: 20px;
+  }
+
+  /* *****Event Info ******** */
+  .event-summary {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  /* *****FAQ Section ******** */
+  #faq-hd {
+    font-size: 22px;
+    margin-bottom: 8%;
+  }
+}
+
+/* iphone 4 screen media query */
+@media screen and (max-width: 321px) {
+  .flex-container {
+    background: url(images/connect-logo.png);
+    width: 100%;
+    height: 90vh;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+/* iphone 4 screen media query end */
